@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;500&family=Poppins&family=Roboto+Slab:wght@700&family=Sacramento&family=Syne:wght@400;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: 'Montserrat', sans-serif;
+}
