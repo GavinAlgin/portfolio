@@ -1,47 +1,69 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import illustration from '../assets/illustration.png';
 
-const HeroSection: React.FC = () => {
+const tooltipVariants = {
+  initial: { opacity: 0, y: -10 },
+  hover: {
+    opacity: 1,
+    y: -30,
+    transition: { duration: 0.3 },
+  },
+};
+
+const HeroSection = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-center min-h-screen bg-white relative overflow-hidden px-8">
-      {/* Flashlight spots */}
-      <div className="absolute inset-0 bg-black opacity-20 rounded-full blur-lg" style={{ top: '20%', left: '10%', width: '300px', height: '300px' }}></div>
-      <div className="absolute inset-0 bg-black opacity-20 rounded-full blur-lg" style={{ top: '60%', right: '15%', width: '250px', height: '250px' }}></div>
-      <div className="absolute inset-0 bg-black opacity-20 rounded-full blur-lg" style={{ top: '30%', left: '70%', width: '200px', height: '200px' }}></div>
+    <section className="relative h-screen w-full overflow-hidden bg-black flex items-center justify-center px-4">
+      <div className="relative z-10 text-center">
+        <motion.div
+          className="relative inline-block group cursor-pointer"
+          initial="initial"
+          whileHover="hover">
+          {/* Tooltips */}
+          <motion.div
+            className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full px-4 py-2 text-sm text-white bg-white/10 backdrop-blur-md rounded-lg pointer-events-none shadow-lg"
+            variants={tooltipVariants}>
+            Software Engineer
+          </motion.div>
 
-      {/* Text content centered */}
-      <div className="relative z-10 flex flex-col items-center text-center max-w-md md:max-w-2xl">
-        <motion.h1
-          className="text-3xl md:text-5xl font-bold text-gray-800"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Gavin Gideon Algin
-        </motion.h1>
-        <motion.p
-          className="mt-4 text-base md:text-lg text-gray-600"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Discover amazing creative developer hardwork tailored just for you.
-        </motion.p>
-      </div>
+          <motion.div
+            className="absolute -top-10 -right-24 px-4 py-2 text-sm text-white bg-white/10 backdrop-blur-md rounded-lg pointer-events-none shadow-lg"
+            variants={tooltipVariants}>
+            Frontend Developer
+          </motion.div>
 
-      {/* Image on the right, larger on bigger screens */}
-      <div className="relative z-10 mt-8 md:mt-0 md:ml-12">
-        <motion.img
-          src={illustration}
-          alt="Illustration"
-          className="w-full md:w-[600px] lg:w-[800px] h-auto"
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        />
+          <motion.div
+            className="absolute -bottom-10 -left-28 px-4 py-2 text-sm text-white bg-white/10 backdrop-blur-md rounded-lg pointer-events-none shadow-lg"
+            variants={tooltipVariants}>
+            Backend Developer
+          </motion.div>
+
+          <motion.div
+            className="absolute bottom-0 left-full ml-6 px-4 py-2 text-sm text-white bg-white/10 backdrop-blur-md rounded-lg pointer-events-none shadow-lg"
+            variants={tooltipVariants}>
+            Full Stack Developer
+          </motion.div>
+
+          <motion.div
+            className="absolute top-1/2 -left-32 -translate-y-1/2 px-4 py-2 text-sm text-white bg-white/10 backdrop-blur-md rounded-lg pointer-events-none shadow-lg"
+            variants={tooltipVariants}>
+            Software Developer
+          </motion.div>
+
+          {/* Name Title */}
+          <motion.h1
+            className="text-[20vw] sm:text-[18vw] md:text-[14vw] lg:text-[10vw] font-bold text-white leading-none nameTitle"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}>
+            Gavin Algin.
+          </motion.h1>
+        </motion.div>
+
+        {/* Subtitle */}
+        <p className="mt-6 text-sm sm:text-md md:text-xl text-[#ddd] max-w-4xl mx-auto">
+          I bring value to web and mobile development projects by merging technical expertise with creativity and asethetics.
+        </p>
       </div>
-    </div>
+    </section>
   );
 };
 

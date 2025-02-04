@@ -18,7 +18,7 @@ const CustomCursor: React.FC = () => {
 
   return (
     <div
-      className="fixed w-6 h-6 rounded-full bg-black pointer-events-none z-50"
+      className="fixed w-6 h-6 rounded-full bg-black pointer-events-none z-50 cursor-pointer"
       style={{
         left: mousePos.x - 10 + 'px',
         top: mousePos.y - 10 + 'px',

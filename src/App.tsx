@@ -6,14 +6,15 @@ import HeroSection from "./components/Hero";
 import Navbar from "./components/Navbar";
 import PortfolioSlide from "./components/PortfolioSlide";
 import LoadingPage from "./lib/LoadingPage";
+import Footers from "./components/Footers";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => {  
     const timer = setTimeout(() => {
       setIsLoading(false);  
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,6 +30,7 @@ function App() {
       <BentoGrid />
       <PortfolioSlide />
       <ContactUs />
+      <Footers />
     </div>
   );
 }

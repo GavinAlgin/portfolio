@@ -30,11 +30,11 @@ const Footers = () => {
                 <div className="lg:flex lg:items-end lg:justify-between">
                 <div>
                     <div className="flex justify-center text-black lg:justify-start">
-                        <h1 className="text-[#000] text-xl font-bold">GoodMoodDrip.</h1>
+                        <h1 className="text-[#000] text-6xl font-bold">Thanks for visiting.</h1>
                     </div>
 
                     <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-                    Where digital innovation meets GoodmoodDrip street fashion wear.
+                    Where digital innovation meets creative arts.
                     </p>
                 </div>
 

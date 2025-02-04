@@ -2,16 +2,16 @@ import React from 'react'
 
 const PortfolioSlide = () => {
   return (
-    <section>
+    <section className="min-h-screen">
         {/* Container */}
-        <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+        <div className="mx-auto w-full h-full max-w-full px-5 py-16 md:px-10 md:py-24 lg:py-32">
             {/* Component */}
-            <div className="relative pt-60">
+            <div className="relative pt-60 h-full">
             {/* Item */}
-            <div className="sticky bottom-60 z-[3] -mt-48 mb-36 grid items-center gap-8 rounded-xl bg-[#e9e9f0] px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20">
+            <div className="sticky bottom-60 z-[3] -mt-48 mb-36 grid items-center gap-8 rounded-xl bg-[#494849] px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20 border border-black">
                 <div className="max-w-3xl lg:grid lg:gap-32">
-                <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:m-0">Mobile Design & Development Process</h2>
-                <p className="max-w-md text-sm text-[#636262] sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
+                <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:m-0">Digital Web & Mobile Development Agency</h2>
+                <p className="max-w-md text-sm text-[#f7f7f7] sm:text-base">A digital company called expandly, i built a full-stack web development platform which can allow clients to request a digital branding and platform through a booking appointment system and contact us form using vite framework, reacts, javascript, tailwindcss, RESTAPI, and firebase</p>
                 <p className="hidden text-2xl font-bold lg:block">// 01</p>
                 </div>
                 <div className="flex h-[480px] w-full items-center justify-center text-[#858585]">
@@ -23,10 +23,10 @@ const PortfolioSlide = () => {
                 <p className="block text-2xl font-bold lg:hidden">// 01</p>
             </div>
             {/* Item */}
-            <div className="sticky bottom-36 top-auto z-[2] -mt-24 mb-12 grid items-center gap-8 rounded-xl bg-[#f2f2f2] px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20">
+            <div className="sticky bottom-36 top-auto z-[2] -mt-24 mb-12 grid items-center gap-8 rounded-xl bg-[#494849] px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20 border border-black">
                 <div className="max-w-3xl lg:grid lg:gap-32">
-                <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:m-0">Use by the world’s best companies</h2>
-                <p className="max-w-md text-sm text-[#636262] sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
+                <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:m-0">full-Stack Mobile Development</h2>
+                <p className="max-w-md text-sm text-[#f7f7f7] sm:text-base">Built a full stack ecommerce & learning management production ready mobile application, which enables customers to join a learning program and buy certain available outsourced items to help procceed with the program, using Next.js, React native expo, Typescript, Tailwindcss, Supabase, Postman API, Zustand and Supabase, Postgres </p>
                 <p className="hidden text-2xl font-bold lg:block">// 02</p>
                 </div>
                 <div className="flex h-[480px] w-full items-center justify-center text-[#858585]">
@@ -38,10 +38,10 @@ const PortfolioSlide = () => {
                 <p className="block text-2xl font-bold lg:hidden">// 02</p>
             </div>
             {/* Item */}
-            <div className="sticky bottom-12 top-auto mb-12 grid items-center gap-8 rounded-xl bg-[#d9d9d9] px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20">
+            <div className="sticky bottom-12 top-auto mb-12 grid items-center gap-8 rounded-xl bg-[#494849] px-5 py-10 sm:px-12 lg:grid-cols-2 lg:gap-20 border border-black">
                 <div className="max-w-3xl lg:grid lg:gap-32">
-                <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:m-0">Use by the world’s best companies</h2>
-                <p className="max-w-md text-sm text-[#636262] sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim</p>
+                <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:m-0">AI/ML Symtom Checker</h2>
+                <p className="max-w-md text-sm text-[#f7f7f7] sm:text-base">Full stack python, Django, symtom checker which identifies the type of symtom the user has on audio, scanning and typing decription of the symtom </p>
                 <p className="hidden text-2xl font-bold lg:block">// 03</p>
                 </div>
                 <div className="flex h-[480px] w-full items-center justify-center text-[#858585]">
@@ -51,7 +51,7 @@ const PortfolioSlide = () => {
                 </svg>
                 </div>
                 <p className="block text-2xl font-bold lg:hidden">// 03</p>
-            </div>
+                </div>
             </div>
         </div>
     </section>
