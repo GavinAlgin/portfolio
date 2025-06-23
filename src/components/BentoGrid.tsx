@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPython, FaNodeJs,
-  FaFigma, FaAdobe, FaPhp
-} from 'react-icons/fa';
-import { SiTypescript, SiMysql, SiSupabase, SiAdobexd, SiReact } from 'react-icons/si';
-
 import profileIMG from '../assets/ChatGPT Image Jun 4, 2025, 01_12_44 AM.png';
 
 // Skills Data with icon and animation direction
@@ -38,7 +32,7 @@ const techSkills = [
     <path d="M19 12C19 11.1716 19.6716 10.5 20.5 10.5C21.3284 10.5 22 11.1716 22 12C22 12.8284 21.3284 13.5 20.5 13.5C19.6716 13.5 19 12.8284 19 12Z" stroke="#000000" strokeWidth="1.5"></path>
     <path d="M2 12C2 11.1716 2.67157 10.5 3.5 10.5C4.32843 10.5 5 11.1716 5 12C5 12.8284 4.32843 13.5 3.5 13.5C2.67157 13.5 2 12.8284 2 12Z" stroke="#000000" strokeWidth="1.5"></path>
     <path d="M13.7071 10.2929C13.4142 10 12.9428 10 12 10C11.0572 10 10.5858 10 10.2929 10.2929M13.7071 10.2929C14 10.5858 14 11.0572 14 12C14 12.9428 14 13.4142 13.7071 13.7071M13.7071 10.2929C13.7071 10.2929 13.7071 10.2929 13.7071 10.2929ZM10.2929 10.2929C10 10.5858 10 11.0572 10 12C10 12.9428 10 13.4142 10.2929 13.7071M10.2929 10.2929C10.2929 10.2929 10.2929 10.2929 10.2929 10.2929ZM10.2929 13.7071C10.5858 14 11.0572 14 12 14C12.9428 14 13.4142 14 13.7071 13.7071M10.2929 13.7071C10.2929 13.7071 10.2929 13.7071 10.2929 13.7071ZM13.7071 13.7071C13.7071 13.7071 13.7071 13.7071 13.7071 13.7071Z" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-    <path d="M20.7071 2.29289C20.4142 2 19.9428 2 19 2C18.0572 2 17.5858 2 17.2929 2.29289M20.7071 2.29289C21 2.58579 21 3.05719 21 4C21 4.94281 21 5.41421 20.7071 5.70711M20.7071 2.29289C20.7071 2.29289 20.7071 2.29289 20.7071 2.29289ZM17.2929 2.29289C17 2.58579 17 3.05719 17 4C17 4.94281 17 5.41421 17.2929 5.70711M17.2929 2.29289C17.2929 2.29289 17.2929 2.29289 17.2929 2.29289ZM17.2929 5.70711C17.5858 6 18.0572 6 19 6C19.9428 6 20.4142 6 20.7071 5.70711M17.2929 5.70711C17.2929 5.70711 17.2929 5.70711 17.2929 5.70711ZM20.7071 5.70711C20.7071 5.70711 20.7071 5.70711 20.7071 5.70711Z" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+    <path d="M20.7071 2.29289C20.4142 2 19.9428 2 19 2C18.0572 2 17.5858 2 17.2929 2.29289M20.7071 2.29289C21 2.58579 21 3.05719 21 4C21 4.94281 21 5.41421 20.7071 5.70711M20.7071 2.29289C20.7071 2.29289 20.7071 2.29289 20.7071 2.29289ZM17.2929 2.29289C17 2.58579 17 3.05719 17 4C17 4.94281 17 5.41421 17.2929 5.70711M17.2929 2.29289C17.2929 2.29289 17.2929 2.29289 17.2929 2.29289ZM17.2929 5.70711C17.5858 6 18.0572 6 19 6C19.9428 6 20.4142 6 20.7071 5.70711M17.2929 5.70711C17.2929 5.70711 17.2929 5.70711 17.2929 5.70711Z" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
     <path d="M6.70711 18.2929C6.41421 18 5.94281 18 5 18C4.05719 18 3.58579 18 3.29289 18.2929M6.70711 18.2929C7 18.5858 7 19.0572 7 20C7 20.9428 7 21.4142 6.70711 21.7071M6.70711 18.2929C6.70711 18.2929 6.70711 18.2929 6.70711 18.2929ZM3.29289 18.2929C3 18.5858 3 19.0572 3 20C3 20.9428 3 21.4142 3.29289 21.7071M3.29289 18.2929C3.29289 18.2929 3.29289 18.2929 3.29289 18.2929ZM3.29289 21.7071C3.58579 22 4.05719 22 5 22C5.94281 22 6.41421 22 6.70711 21.7071M3.29289 21.7071C3.29289 21.7071 3.29289 21.7071 3.29289 21.7071ZM6.70711 21.7071C6.70711 21.7071 6.70711 21.7071 6.70711 21.7071Z" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
     <path d="M5 12H10" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
     <path d="M14 12H19" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
@@ -75,6 +69,11 @@ const techSkills = [
     <path d="M17.5002 6.5L17.4912 6.5" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
     <path d="M12.982 12.2064L10.0004 14M10.0004 14L7.01869 15.7936M10.0004 14L10.0187 17.5M10.0004 14L9.98202 10.5M10.0004 14L13 15.7063M10.0004 14L7 12.2935" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
 </svg>, direction: 'top' },
+  { name: 'Java', icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#fff"} fill={"none"}>
+    <path d="M10.7962 2.91338C11.4188 2.29077 12.2756 1.96039 13.1551 2.0038L18.7587 2.28039C20.3601 2.35944 21.6406 3.63993 21.7196 5.24131L21.9962 10.8449C22.0396 11.7244 21.7092 12.5811 21.0866 13.2037L13.5082 20.7822C11.8844 22.4059 9.25177 22.4059 7.62799 20.7822L3.21783 16.372C1.59406 14.7482 1.59406 12.1156 3.21783 10.4918L10.7962 2.91338Z" stroke="#000000" strokeWidth="1.5"></path>
+    <path d="M17.5002 6.5L17.4912 6.5" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+    <path d="M12.982 12.2064L10.0004 14M10.0004 14L7.01869 15.7936M10.0004 14L10.0187 17.5M10.0004 14L9.98202 10.5M10.0004 14L13 15.7063M10.0004 14L7 12.2935" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+</svg>, direction: 'left' },
 ];
 
 const designSkills = [
@@ -164,10 +163,27 @@ const BentoGrid = () => {
   const [showEducation, setShowEducation] = useState(false);
   const [showSkills, setShowSkills] = useState(false);
 
+  // The iconVariants are not directly used in the current render logic,
+  // but if you intend to animate the toggle button icon, they would be applied there.
+  const iconVariants = {
+    animate: {
+      y: [0, -10, 10, 0],
+      x: [0, -20, 20, 0],
+      scale: [1, 1.2, 1],
+      rotate: [0, 10, -10, 0],
+      transition: {
+        repeat: Infinity,
+        repeatType: "reverse",
+        duration: 5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className="flex h-screen w-full bg-white">
+    <div className="flex flex-col md:flex-row min-h-screen w-full bg-white overflow-hidden md:overflow-auto">
       {/* Image Section */}
-      <div className="relative w-1/2 h-full">
+      <div className="relative w-full md:w-1/2 h-1/2 md:h-full"> {/* Adjusted for mobile */}
         <img
           src={profileIMG}
           alt="About Us"
@@ -205,7 +221,7 @@ const BentoGrid = () => {
       </div>
 
       {/* Text Section */}
-      <div className="w-1/2 flex items-center justify-center p-12 text-center md:text-left overflow-y-auto">
+      <div className="w-full md:w-1/2 flex items-start md:items-center justify-center p-4 md:p-12 text-center md:text-left overflow-y-auto max-h-[calc(100vh-50px)] md:max-h-none"> {/* Adjusted padding */}
         <AnimatePresence mode="wait">
           {!showSkills ? (
             <motion.div
@@ -213,16 +229,15 @@ const BentoGrid = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.4 }}
-            >
-              <h2 className="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                I am a dedicated software engineer and freelance developer creating impactful digital experiences. From startups to enterprises, I build scalable, modern, and responsive solutions that help my clients succeed, with a Bachelor of Science degree in Information Technology. With over three years of hands-on experience, 
+              transition={{ duration: 0.4 }}>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">About Me</h2> {/* Adjusted text size */}
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed md:mt-8 mb-6 md:mb-8"> {/* Adjusted text size */}
+                I am a dedicated software engineer and freelance developer creating impactful digital experiences. From startups to enterprises, I build scalable, modern, and responsive solutions that help my clients succeed, with a Bachelor of Science degree in Information Technology. With over three years of hands-on experience,
                 I specialize in native web development technologies as well as Python programming. My passion lies in building efficient, scalable, and user-friendly applications tailored to client needs, combining both technical expertise and creative problem-solving skills.
               </p>
 
               {/* Address Dropdown */}
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6"> {/* Adjusted margin */}
                 <button
                   onClick={() => setShowAddress(!showAddress)}
                   className="flex items-center text-black font-semibold underline underline-offset-4"
@@ -241,14 +256,14 @@ const BentoGrid = () => {
                   </svg>
                 </button>
                 {showAddress && (
-                  <div className="mt-2 text-gray-600 text-base">
+                  <div className="mt-2 text-gray-600 text-sm md:text-base"> {/* Adjusted text size */}
                     Based in Limpopo, Polokwane – available remotely and on-site within select regions.
                   </div>
                 )}
               </div>
 
               {/* Experience Dropdown */}
-              <div className="mb-6">
+              <div className="mb-4 md:mb-6"> {/* Adjusted margin */}
                 <button
                   onClick={() => setShowExperience(!showExperience)}
                   className="flex items-center text-black font-semibold underline underline-offset-4"
@@ -267,7 +282,7 @@ const BentoGrid = () => {
                   </svg>
                 </button>
                 {showExperience && (
-                  <div className="mt-2 text-gray-600 text-base">
+                  <div className="mt-2 text-gray-600 text-sm md:text-base"> {/* Adjusted text size */}
                     3+ years of experience working with HTML, CSS, JavaScript, PHP, Typescript, Node.js, React Native expo, SQL, Supabase and Python in both freelance and collaborative environments. Delivered websites, dashboards, APIs, and automation scripts for various clients.
                   </div>
                 )}
@@ -293,11 +308,11 @@ const BentoGrid = () => {
                   </svg>
                 </button>
                 {showEducation && (
-                  <div className="mt-2 text-gray-600 text-base">
+                  <div className="mt-2 text-gray-600 text-sm md:text-base"> {/* Adjusted text size */}
                     Bachelor of Science in Information Technology – Richfield Graduate Institute of Technology (RGIT),
-                    <br/>
+                    <br />
                     Cisco Badges in Beginner Data Science & Cyber Security,
-                    <br/>
+                    <br />
                     Certifications: AWS, Google Cloud,
                   </div>
                 )}
@@ -312,11 +327,11 @@ const BentoGrid = () => {
               transition={{ duration: 0.4 }}
               className="text-center w-full"
             >
-              <h2 className="text-4xl font-bold text-gray-800 mb-6">Skills Showcase</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">Skills Showcase</h2> {/* Adjusted text size */}
 
-              <h3 className="text-2xl font-semibold mb-4 text-gray-700">Technical Skills</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-3 md:mb-4 text-gray-700">Technical Skills</h3> {/* Adjusted text size and margin */}
               <motion.div
-                className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8"
+                className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4 mb-6 md:mb-8" 
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -324,20 +339,20 @@ const BentoGrid = () => {
                 {techSkills.map(({ name, icon }) => (
                   <motion.div
                     key={name}
-                    className="flex items-center gap-2 border border-black bg-transparent text-black py-2 px-4 rounded-full shadow-sm"
+                    className="flex items-center justify-center gap-2 border border-black bg-transparent text-black py-2 px-3 md:px-4 rounded-full shadow-sm text-sm md:text-base" /* Adjusted padding and text size */
                     initial={getItemVariants('pourIn').hidden}
                     animate={getItemVariants('pourIn').visible}
                     transition={{ type: 'spring', stiffness: 100, damping: 12 }}
                   >
-                    <span className="text-xl">{icon}</span>
+                    <span className="text-lg md:text-xl">{icon}</span> {/* Adjusted icon size */}
                     {name}
                   </motion.div>
                 ))}
               </motion.div>
 
-              <h3 className="text-2xl font-semibold mb-4 text-gray-700">Design Tools</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-3 md:mb-4 text-gray-700">Design Tools</h3> {/* Adjusted text size and margin */}
               <motion.div
-                className="grid grid-cols-2 md:grid-cols-3 gap-4"
+                className="grid grid-cols-2 sm:grid-cols-3 gap-3 md:gap-4" 
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -345,12 +360,12 @@ const BentoGrid = () => {
                 {designSkills.map(({ name, icon }) => (
                   <motion.div
                     key={name}
-                    className="flex items-center gap-2 border border-gray-800 bg-transparent text-gray-800 py-2 px-4 rounded-full shadow-sm"
+                    className="flex items-center justify-center gap-2 border border-gray-800 bg-transparent text-gray-800 py-2 px-3 md:px-4 rounded-full shadow-sm text-sm md:text-base" /* Adjusted padding and text size */
                     initial={getItemVariants('pourIn').hidden}
                     animate={getItemVariants('pourIn').visible}
                     transition={{ type: 'spring', stiffness: 100, damping: 12 }}
                   >
-                    <span className="text-xl">{icon}</span>
+                    <span className="text-lg md:text-xl">{icon}</span> {/* Adjusted icon size */}
                     {name}
                   </motion.div>
                 ))}

@@ -4,9 +4,10 @@ import BentoGrid from "./components/BentoGrid";
 import ContactUs from "./components/ContactUs";
 import HeroSection from "./components/Hero";
 import Navbar from "./components/Navbar";
-import PortfolioSlide from "./components/PortfolioSlide";
 import LoadingPage from "./lib/LoadingPage";
 import Footers from "./components/Footers";
+import ProjectsCount from "./components/ProjectsCount";
+import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,12 +25,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="MainContent">
       <Navbar />
       <HeroSection />
       <BentoGrid />
-      <PortfolioSlide />
+      <ProjectsCount />
+      <ProjectsSection />
       <ContactUs />
+      <br/>
       <Footers />
     </div>
   );
