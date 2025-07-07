@@ -1,4 +1,12 @@
-import React from "react";
+
+type ProjectCardProps = {
+  image: string;
+  title: string;
+  description: string;
+  languages: string[];
+  type: string;
+  link: string;
+};
 
 const ProjectCard = ({
   image,
@@ -7,7 +15,7 @@ const ProjectCard = ({
   languages,
   type,
   link,
-}) => {
+}: ProjectCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-md mx-auto sm:max-w-full">
       <img

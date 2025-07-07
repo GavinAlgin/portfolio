@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import GooeyNav from "../lib/GooeyNav/GooeyNav";
@@ -12,7 +12,7 @@ import IMG6 from "../assets/projects_assets/Untitled design.png"
 import IMG7 from "../assets/projects_assets/billoto.png"
 
 const App = () => {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState<ProjectFilter>("All");
 
   // This is the list of projects you want to display
   const projects = [
@@ -92,13 +92,14 @@ const App = () => {
   ];
 
   // Function to handle the filtering of projects
-  const handleNavClick = (type) => {
+  type ProjectFilter = 'All' | 'Projects' | 'Freelancing';
+  const handleNavClick = (type: ProjectFilter) => {
     setFilter(type);
   };
 
   // Filter the projects based on the selected type
   const filteredProjects =
-    filter === "all"
+    filter === "All"
       ? projects
       : projects.filter((project) => project.type === filter);
 
@@ -108,10 +109,11 @@ const App = () => {
         {/* Navigation Tabs */}
         <div className="flex justify-center mb-8">
           <GooeyNav
-            // You should pass the filter options ("all", "React", "HTML/CSS", "Firebase")
-            items={["All", "Projects", "Freelancing",].map((type) => ({
+            // You should pass the filter options ("All", "Projects", "Freelancing",)
+            items={["All", "Projects", "Freelancing"].map((type) => ({
               label: type,
-              onClick: () => handleNavClick(type), // Update filter state when clicked
+              href:  `#${type.toLowerCase()}`,
+              onClick: () => handleNavClick(type as ProjectFilter), // Update filter state when clicked
             }))}
             particleCount={15}
             particleDistances={[90, 10]}

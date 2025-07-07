@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import BentoGrid from "./components/BentoGrid";
 import ContactUs from "./components/ContactUs";
 import HeroSection from "./components/Hero";

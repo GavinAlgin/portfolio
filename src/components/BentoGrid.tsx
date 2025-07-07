@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import profileIMG from '../assets/ChatGPT Image Jun 4, 2025, 01_12_44 AM.png';
 
@@ -112,7 +112,7 @@ const containerVariants = {
 const pouringEasing = [0.22, 1, 0.36, 1];
 
 // Variants for the "pour-in" effect
-const getItemVariants = (direction) => {
+const getItemVariants = (direction: string) => {
   const distance = 60;
   switch (direction) {
     case 'pourIn':
@@ -165,20 +165,6 @@ const BentoGrid = () => {
 
   // The iconVariants are not directly used in the current render logic,
   // but if you intend to animate the toggle button icon, they would be applied there.
-  const iconVariants = {
-    animate: {
-      y: [0, -10, 10, 0],
-      x: [0, -20, 20, 0],
-      scale: [1, 1.2, 1],
-      rotate: [0, 10, -10, 0],
-      transition: {
-        repeat: Infinity,
-        repeatType: "reverse",
-        duration: 5,
-        ease: "easeInOut",
-      },
-    },
-  };
 
   return (
     <div className="flex flex-col md:flex-row min-h-screen w-full bg-white overflow-hidden md:overflow-auto">
