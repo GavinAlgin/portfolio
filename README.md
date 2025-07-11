@@ -1,3 +1,52 @@
+# 👋 [Gavin Algin] - Personal Portfolio
+
+Welcome to my personal portfolio repository! This project showcases my skills, projects, and experience as a [your profession, e.g., software developer, designer, data scientist].
+
+---
+
+## 💼 About Me
+
+Hi! I'm [Gavin Algin], a passionate [software developer, engineer and data scientist] specializing in [software engineering]. I enjoy creating impactful solutions, learning new technologies, and sharing knowledge.
+
+- 🌍 Location: [South Africa, Limpopo, Polokwane]
+- 💻 Tech Stack: [Typescript, JavaScript, React, Python, Java, C#, C++, .Net, Next.js, Vite, React native expo, Electron, Django, Springboot, MERN]
+- 📫 Contact: [gavinkidart65@gmail.com]
+
+---
+
+## 🚀 Portfolio Highlights
+
+Here are some featured projects:
+
+| Project       | Description                                  | Link                        |
+| ------------- | -------------------------------------------- | --------------------------- |
+| Expandly   | Tech website which showcases business services             | [Github Pages](http://...)     |
+| Insight Evolution   | Mobile learning management system and ecommerce             | [Playstore]()   |
+| TaskCo. | An AI productivity chrome extension           | [Live Demo](chrome store)     |
+
+---
+
+## 🛠️ Built With
+
+- HTML5 & CSS3 (or TailwindCSS, Bootstrap)
+- JavaScript (or TypeScript)
+- Frameworks: React / Vue / Angular (if applicable)
+- Backend: Node.js / Django / Flask (if applicable)
+- Hosting: GitHub Pages / Netlify / Vercel
+
+---
+
+## 📂 Repository Structure
+
+```plaintext
+/ ── Root directory
+├── assets/          # Images, icons, fonts
+├── components/      # Reusable UI components
+├── pages/           # Portfolio pages
+├── styles/          # CSS or styling files
+└── README.md        # This file
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
